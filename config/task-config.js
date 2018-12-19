@@ -1,6 +1,6 @@
 module.exports = {
   html        : true,
-  images      : false,
+  images      : true,
   fonts       : true,
   static      : true,
   svgSprite   : true,
