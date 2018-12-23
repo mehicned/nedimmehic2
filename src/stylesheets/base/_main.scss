@@ -3,12 +3,16 @@ body{
 
 }
 
-body, .smooth-container { scroll-behavior: smooth }
+body, .smooth-container { scroll-behavior: smooth;}
 
 .navbar-brand{
   font-weight: bold;
   letter-spacing: -1px;
   font-size: 25px;
+}
+
+.navbar button{
+  text-align: center !important;
 }
 
 #hero{
@@ -78,13 +82,27 @@ body, .smooth-container { scroll-behavior: smooth }
   height:100%;
   margin: 50px 0 50px 0;
   width: 100%;
+
+
+  img{
+    width: 200px;
+    margin: 40px 0 40px 0;
+    height: 100%;
+
+  }
 }
 
+.slika{
+  display: flex;
+  justify-content: center;
+}
 
 .abouthead{
   margin-left: auto;
   text-align: center;
   font-weight: bold;
+
+
 }
 
 .aboutparagraph{
@@ -101,4 +119,48 @@ body, .smooth-container { scroll-behavior: smooth }
   border-top: 1px solid #ddd;
   background-color: #fff;
   text-align: center;
+}
+
+.projectshead{
+  margin-left: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.projects{
+  background-color: #eee;
+  border: 3px solid transparent;
+  background-clip:padding-box;
+  height: 250px;
+  border-radius: 15px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+  img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#projects{
+  padding-bottom: 50px;
+}
+
+.projects:hover{
+  filter: blur(0.4px);
+}
+
+.projects h3{
+  color: #fff;
+  filter: drop-shadow(2px 2px 5px #333);
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
 }
